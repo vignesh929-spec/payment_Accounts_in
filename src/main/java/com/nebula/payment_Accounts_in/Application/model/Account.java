@@ -10,7 +10,8 @@ public class Account {
     private String AccountNumber;
     private String CardBrand;
     private String CardNumber;
-    
+    private String ExpiryDate;
+
 
 
 

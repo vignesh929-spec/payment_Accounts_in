@@ -11,7 +11,7 @@ import java.lang.reflect.Parameter;
 
 public interface PaymentAccountApi {
 
-    @GetMapping(value = "/PaymentAccounts/{AccountID}" )
+    @GetMapping(value = "/PaymentAccounts/EFT/{AccountID}" )
     String GetInstrumentDetails(  @PathVariable("AccountID") String AccountID );
 
 }
