@@ -1,111 +1,58 @@
 package com.nebula.payment_Accounts_in.Application.model;
 
-public class Account {
+public class EFTInstrumentRequest {
 
-    private String AccountID;
     private String customerID;
     private String AccountType;
     private String Name;
     private String IFSC;
     private String AccountNumber;
-    private String CardBrand;
-    private String CardNumber;
-    private String ExpiryDate;
     private boolean saveForFutureUse;
-	
-    public Account() {
+	public EFTInstrumentRequest() {
 		super();
 	}
-
-	public String getAccountID() {
-		return AccountID;
-	}
-
-	public void setAccountID(String accountID) {
-		AccountID = accountID;
-	}
-
 	public String getCustomerID() {
 		return customerID;
 	}
-
 	public void setCustomerID(String customerID) {
 		this.customerID = customerID;
 	}
-
 	public String getAccountType() {
 		return AccountType;
 	}
-
 	public void setAccountType(String accountType) {
 		AccountType = accountType;
 	}
-
 	public String getName() {
 		return Name;
 	}
-
 	public void setName(String name) {
 		Name = name;
 	}
-
 	public String getIFSC() {
 		return IFSC;
 	}
-
 	public void setIFSC(String iFSC) {
 		IFSC = iFSC;
 	}
-
 	public String getAccountNumber() {
 		return AccountNumber;
 	}
-
 	public void setAccountNumber(String accountNumber) {
 		AccountNumber = accountNumber;
 	}
-
-	public String getCardBrand() {
-		return CardBrand;
-	}
-
-	public void setCardBrand(String cardBrand) {
-		CardBrand = cardBrand;
-	}
-
-	public String getCardNumber() {
-		return CardNumber;
-	}
-
-	public void setCardNumber(String cardNumber) {
-		CardNumber = cardNumber;
-	}
-
-	public String getExpiryDate() {
-		return ExpiryDate;
-	}
-
-	public void setExpiryDate(String expiryDate) {
-		ExpiryDate = expiryDate;
-	}
-
 	public boolean isSaveForFutureUse() {
 		return saveForFutureUse;
 	}
-
 	public void setSaveForFutureUse(boolean saveForFutureUse) {
 		this.saveForFutureUse = saveForFutureUse;
 	}
-
 	@Override
 	public String toString() {
-		return "Account [AccountID=" + AccountID + ", customerID=" + customerID + ", AccountType=" + AccountType
-				+ ", Name=" + Name + ", IFSC=" + IFSC + ", AccountNumber=" + AccountNumber + ", CardBrand=" + CardBrand
-				+ ", CardNumber=" + CardNumber + ", ExpiryDate=" + ExpiryDate + ", saveForFutureUse=" + saveForFutureUse
+		return "EFTInstrumentRequest [customerID=" + customerID + ", AccountType=" + AccountType + ", Name=" + Name
+				+ ", IFSC=" + IFSC + ", AccountNumber=" + AccountNumber + ", saveForFutureUse=" + saveForFutureUse
 				+ "]";
 	}
-    
-    
     
     
 }

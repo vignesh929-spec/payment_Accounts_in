@@ -11,7 +11,9 @@ public class AccountsController implements PaymentAccountApi {
     @Autowired
     public AccountService AccountService;
     @Override
-    public String GetInstrumentDetails(String AccountID) {
+    public  String GetEFTInstrumentDetails(String AccountID) {
         return AccountService.getAccount(AccountID);
     }
+
+
 }
