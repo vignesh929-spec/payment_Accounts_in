@@ -1,6 +1,8 @@
 package com.nebula.payment_Accounts_in.Application.model;
 
-public class EFTInstrumentRequest {
+
+
+public class EFTAccountRequest {
 
     private String customerID;
     private String AccountType;
@@ -8,9 +10,23 @@ public class EFTInstrumentRequest {
     private String IFSC;
     private String AccountNumber;
     private boolean saveForFutureUse;
-	public EFTInstrumentRequest() {
+	public EFTAccountRequest() {
 		super();
 	}
+	
+	
+	public EFTAccountRequest(String customerID, String accountType, String name, String iFSC, String accountNumber,
+			boolean saveForFutureUse) {
+		super();
+		this.customerID = customerID;
+		AccountType = accountType;
+		Name = name;
+		IFSC = iFSC;
+		AccountNumber = accountNumber;
+		this.saveForFutureUse = saveForFutureUse;
+	}
+
+
 	public String getCustomerID() {
 		return customerID;
 	}

@@ -1,5 +1,8 @@
 package com.nebula.payment_Accounts_in.Application.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Account {
 
     private String AccountID;
@@ -12,100 +15,111 @@ public class Account {
     private String CardNumber;
     private String ExpiryDate;
     private boolean saveForFutureUse;
-	
+
     public Account() {
-		super();
-	}
+        super();
+    }
 
-	public String getAccountID() {
-		return AccountID;
-	}
+    public Account(String accountID, String customerID, String accountType, String name, String IFSC, String accountNumber, String cardBrand, String cardNumber, String expiryDate, boolean saveForFutureUse) {
+        this.AccountID = accountID;
+        this.customerID = customerID;
+        AccountType = accountType;
+        Name = name;
+        this.IFSC = IFSC;
+        AccountNumber = accountNumber;
+        CardBrand = cardBrand;
+        CardNumber = cardNumber;
+        ExpiryDate = expiryDate;
+        this.saveForFutureUse = saveForFutureUse;
+    }
 
-	public void setAccountID(String accountID) {
-		AccountID = accountID;
-	}
+    public String getAccountID() {
+        return AccountID;
+    }
 
-	public String getCustomerID() {
-		return customerID;
-	}
+    public void setAccountID(String accountID) {
+        AccountID = accountID;
+    }
 
-	public void setCustomerID(String customerID) {
-		this.customerID = customerID;
-	}
+    public String getCustomerID() {
+        return customerID;
+    }
 
-	public String getAccountType() {
-		return AccountType;
-	}
+    public void setCustomerID(String customerID) {
+        this.customerID = customerID;
+    }
 
-	public void setAccountType(String accountType) {
-		AccountType = accountType;
-	}
+    public String getAccountType() {
+        return AccountType;
+    }
 
-	public String getName() {
-		return Name;
-	}
+    public void setAccountType(String accountType) {
+        AccountType = accountType;
+    }
 
-	public void setName(String name) {
-		Name = name;
-	}
+    public String getName() {
+        return Name;
+    }
 
-	public String getIFSC() {
-		return IFSC;
-	}
+    public void setName(String name) {
+        Name = name;
+    }
 
-	public void setIFSC(String iFSC) {
-		IFSC = iFSC;
-	}
+    public String getIFSC() {
+        return IFSC;
+    }
 
-	public String getAccountNumber() {
-		return AccountNumber;
-	}
+    public void setIFSC(String iFSC) {
+        IFSC = iFSC;
+    }
 
-	public void setAccountNumber(String accountNumber) {
-		AccountNumber = accountNumber;
-	}
+    public String getAccountNumber() {
+        return AccountNumber;
+    }
 
-	public String getCardBrand() {
-		return CardBrand;
-	}
+    public void setAccountNumber(String accountNumber) {
+        AccountNumber = accountNumber;
+    }
 
-	public void setCardBrand(String cardBrand) {
-		CardBrand = cardBrand;
-	}
+    public String getCardBrand() {
+        return CardBrand;
+    }
 
-	public String getCardNumber() {
-		return CardNumber;
-	}
+    public void setCardBrand(String cardBrand) {
+        CardBrand = cardBrand;
+    }
 
-	public void setCardNumber(String cardNumber) {
-		CardNumber = cardNumber;
-	}
+    public String getCardNumber() {
+        return CardNumber;
+    }
 
-	public String getExpiryDate() {
-		return ExpiryDate;
-	}
+    public void setCardNumber(String cardNumber) {
+        CardNumber = cardNumber;
+    }
 
-	public void setExpiryDate(String expiryDate) {
-		ExpiryDate = expiryDate;
-	}
+    public String getExpiryDate() {
+        return ExpiryDate;
+    }
 
-	public boolean isSaveForFutureUse() {
-		return saveForFutureUse;
-	}
+    public void setExpiryDate(String expiryDate) {
+        ExpiryDate = expiryDate;
+    }
 
-	public void setSaveForFutureUse(boolean saveForFutureUse) {
-		this.saveForFutureUse = saveForFutureUse;
-	}
+    public boolean isSaveForFutureUse() {
+        return saveForFutureUse;
+    }
 
-	@Override
-	public String toString() {
-		return "Account [AccountID=" + AccountID + ", customerID=" + customerID + ", AccountType=" + AccountType
-				+ ", Name=" + Name + ", IFSC=" + IFSC + ", AccountNumber=" + AccountNumber + ", CardBrand=" + CardBrand
-				+ ", CardNumber=" + CardNumber + ", ExpiryDate=" + ExpiryDate + ", saveForFutureUse=" + saveForFutureUse
-				+ "]";
-	}
-    
-    
-    
-    
+    public void setSaveForFutureUse(boolean saveForFutureUse) {
+        this.saveForFutureUse = saveForFutureUse;
+    }
+
+    @Override
+    public String toString() {
+        return "Account [AccountID=" + AccountID + ", customerID=" + customerID + ", AccountType=" + AccountType
+                + ", Name=" + Name + ", IFSC=" + IFSC + ", AccountNumber=" + AccountNumber + ", CardBrand=" + CardBrand
+                + ", CardNumber=" + CardNumber + ", ExpiryDate=" + ExpiryDate + ", saveForFutureUse=" + saveForFutureUse
+                + "]";
+    }
+
+
 }
